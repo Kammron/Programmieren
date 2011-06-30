@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  Start: MyString
+  Ende: MyString
+  Laenge: 1
+
+two:
+  Start: MyString
+  Ende: MyString
+  Laenge: 1

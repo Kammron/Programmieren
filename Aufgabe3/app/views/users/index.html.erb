@@ -1,0 +1,101 @@
+
+
+
+<div align="center">
+<h1>Mein Routen Berechner</h1>
+</div>
+
+<h1>Graph</h1>
+
+<table>
+  <tr>
+    <th>Start</th>
+    <th>Ende</th>
+    <th>Laenge</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @users.each do |user| %>						
+  <tr>
+    <td><%= user.Start %></td>
+    <td><%= user.Ende %></td>
+    <td><%= user.Laenge %></td>
+    <td><%= link_to 'Show', user %></td>
+  </tr>
+<% end %>
+</table>
+
+<div align="right">
+<html>
+<head>
+<title>Route</title>
+</head>
+<body>
+
+
+
+
+
+
+
+<html><head><title>Test</title>          
+<script type="text/javascript">
+function Antwort () {
+
+if(document.Formular.Eingabe.value == "A-B"){
+  var Ergebnis = (document.Formular.Eingabe.value == "A-B") ? "ist 5 Einheiten lang" : "wurde nicht gefunden!";
+  }
+else if(document.Formular.Eingabe.value == "B-C"){
+  var Ergebnis = (document.Formular.Eingabe.value == "B-C") ? "ist 4 Einheiten lang" : "wurde nicht gefunden!";
+  }
+else if(document.Formular.Eingabe.value == "C-D"){
+  var Ergebnis = (document.Formular.Eingabe.value == "C-D") ? "ist 8 Einheiten lang" : "wurde nicht gefunden!";
+  }
+else if(document.Formular.Eingabe.value == "D-E"){
+  var Ergebnis = (document.Formular.Eingabe.value == "D-E") ? "ist 6 Einheiten lang" : "wurde nicht gefunden!";
+  } 
+else if(document.Formular.Eingabe.value == "A-D"){
+  var Ergebnis = (document.Formular.Eingabe.value == "A-D") ? "ist 5 Einheiten lang" : "wurde nicht gefunden!";
+  }
+else if(document.Formular.Eingabe.value == "C-E"){
+  var Ergebnis = (document.Formular.Eingabe.value == "C-E") ? "ist 2 Einheiten lang" : "wurde nicht gefunden!";
+  }
+else if(document.Formular.Eingabe.value == "E-B"){
+  var Ergebnis = (document.Formular.Eingabe.value == "E-B") ? "ist 3 Einheiten lang" : "wurde nicht gefunden!";
+  }
+else if(document.Formular.Eingabe.value == "A-E"){
+  var Ergebnis = (document.Formular.Eingabe.value == "A-E") ? "ist 7 Einheiten lang" : "wurde nicht gefunden!";
+  }
+     
+  document.Formular.Eingabe.value = "Die Strecke  " + Ergebnis;   
+}
+
+</script>
+</head><body>
+<form name="Formular">
+<p>Welche Strecke soll berechnet werden ? [X-Y] </p>
+<input type="text" name="Eingabe" size="40">
+<input type="button" value="OK" onclick="Antwort()">
+</form>
+</body></html>
+
+
+		
+		</div>
+	</form>
+</div>
+</div>
+
+
+
+</body>
+</html>
+
+
+<br />
+
+
+
+//Kristoffer Mandelbaum , Matrikelnummer : 2053390
