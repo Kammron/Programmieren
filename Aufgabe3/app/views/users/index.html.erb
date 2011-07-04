@@ -94,7 +94,10 @@ else if(document.Formular.Eingabe.value == "D-E-B"){
   } 
 else if(document.Formular.Eingabe.value == "E-B-C"){
   var Ergebnis = (document.Formular.Eingabe.value == "C-E-B") ? "ist 7 Einheiten lang" : "wurde nicht gefunden!";
-  }   
+  }  
+else{
+  var Ergebnis = "wurde nicht gefunden";
+  }
      
   document.Formular.Eingabe.value = "Die Strecke  " + Ergebnis;   
 }
